@@ -8,16 +8,16 @@ window.addEventListener("load", () => {
     setTimeout(() => {
       hello.textContent = greetings[index];
       hello.style.opacity = 1;
-    }, 300);
+    }, 250);
 
     index++;
     if (index < greetings.length) {
-      setTimeout(showGreeting, 600);
+      setTimeout(showGreeting, 500);
     } else {
       setTimeout(() => {
         document.getElementById("preloader").classList.add("fade-out");
         document.getElementById("mainContent").style.opacity = "1";
-      }, 600);
+      }, 400);
     }
   }
 
