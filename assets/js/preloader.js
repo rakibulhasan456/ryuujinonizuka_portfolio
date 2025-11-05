@@ -1,6 +1,6 @@
 window.addEventListener("load", () => {
   const hello = document.getElementById("hello");
-  const greetings = ["Hello", "Hello", "হ্যালো", "नमस्ते"];
+  const greetings = ["Hello", "Hello", "হ্যালো", "नमस्ते", "こんにちは"];
   let index = 0;
 
   function showGreeting() {
