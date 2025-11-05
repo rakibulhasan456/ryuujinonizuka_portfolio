@@ -1,0 +1,119 @@
+.contact-section {
+  padding: 50px 20px;
+  background-color: #101114;
+  color: #f4f4f4;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 900px) {
+  .contact-section {
+    padding: 50px 20px;
+  }
+}
+
+.contact-section .contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  position: relative;
+  text-align: center;
+}
+
+/* CARD STYLE */
+
+.contact-section .contact-card {
+  background: #1a1b20;
+  border-radius: 14px;
+  padding: 40px;
+  flex: 1 1 420px;
+  min-width: 300px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.contact-section .contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.contact-section .section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #2e2f36;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.contact-section .contact-info p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #d2d2d2;
+  margin-bottom: 10px;
+}
+
+/* Divider */
+
+.contact-section .contact-divider {
+  /*width: 2px;*/
+  /*background: linear-gradient(to bottom, #2a2a2a, #3a3a3a);*/
+  /*border-radius: 4px;*/
+  align-self: stretch;
+}
+
+/* Discord Button */
+
+.contact-section .contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #323232;
+  color: #ffffff;
+  padding: 12px 26px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.contact-section .discord-icon {
+  margin-right: 10px;
+}
+
+.contact-section .contact-btn:hover {
+  background: #5865f2;
+  /*box-shadow: 0 6px 14px rgba(88, 101, 242, 0.3);*/
+  /*transform: translateY(-2px);*/
+}
+
+/* Responsive */
+
+@media (max-width: 960px) {
+  .contact-section .contact-wrapper {
+    /*flex-direction: column;*/
+    gap: 30px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 960px) {
+  .contact-section .contact-divider {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
+  .contact-section .contact-card {
+    padding: 30px;
+  }
+}
+

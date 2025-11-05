@@ -1,0 +1,128 @@
+.lsa-section {
+  padding: 150px 20px;
+  background-color: #101114;
+  color: #f4f4f4;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 900px) {
+  .lsa-section {
+    padding: 50px 20px;
+  }
+}
+
+.lsa-container {
+  display: flex;
+  gap: 60px;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+/* LEFT COLUMN: Plane Image */
+
+.lsa-left {
+  flex: 0 0 auto;
+  width: clamp(180px, 350px, 45vw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lsa-left .lsa-plane {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 25px rgba(255, 211, 105, 0.25));
+  transition: transform 0.3s ease;
+}
+
+.lsa-left .lsa-plane:hover {
+  transform: scale(1.03);
+}
+
+/* RIGHT COLUMN: Text Content */
+
+.lsa-right {
+  flex: 1 1 500px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lsa-right .section-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.lsa-mission {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #ffd369;
+  line-height: 1.8;
+  margin-bottom: 35px;
+  border-left: 4px solid #ffd369;
+  padding-left: 15px;
+}
+
+.lsa-description p {
+  font-size: 1.05rem;
+  color: #cfcfcf;
+  line-height: 1.8;
+  margin-bottom: 35px;
+}
+
+.lsa-btn {
+  display: inline-block;
+  background: #ffd369;
+  color: #1b1c20;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.lsa-btn:hover {
+  background: #3200fc;
+  color: #ffffff;
+  font-weight: 600;
+  /*transform: translateY(-3px);*/
+  /*box-shadow: 0 6px 15px rgba(255, 211, 105, 0.3);*/
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .lsa-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .lsa-left {
+    width: clamp(160px, 240px, 60vw);
+  }
+}
+
+@media (max-width: 900px) {
+  .lsa-mission {
+    border-left: none;
+    border-top: 4px solid #ffd369;
+    padding-left: 0;
+    padding-top: 15px;
+  }
+}
+

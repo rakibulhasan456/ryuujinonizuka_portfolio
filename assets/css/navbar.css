@@ -1,0 +1,81 @@
+.nav-item a {
+  border-radius: 20px;
+}
+
+.nav-item a:hover {
+  color: black!important;
+  transition: all 0.5s ease;
+  background-color: white;
+}
+
+/* ---------- Force navbar brand 10px from viewport left (all breakpoints) ---------- */
+
+/* Navbar overlay setup */
+
+.navbar {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent !important;
+  z-index: 1100;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+/* Remove Bootstrap container padding */
+
+.navbar > .container, .navbar > .container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Brand - fixed left */
+
+.navbar-brand {
+  position: absolute !important;
+  left: 15px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  z-index: 1060 !important;
+  color: #fff !important;
+}
+
+@media (max-width: 575px) {
+  .navbar-brand {
+    left: 10px !important;
+  }
+}
+
+/* Collapse + Toggler - fixed right */
+
+.navbar-collapse, .navbar-toggler {
+  position: absolute !important;
+  right: 15px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  z-index: 1060 !important;
+}
+
+@media (max-width: 575px) {
+  .navbar-collapse, .navbar-toggler {
+    right: 10px !important;
+  }
+}
+
+/* Navbar links */
+
+.navbar .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+

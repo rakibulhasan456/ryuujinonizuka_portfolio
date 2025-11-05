@@ -1,0 +1,31 @@
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 1s ease, visibility 1s ease;
+}
+
+.hello-container {
+  text-align: center;
+}
+
+.hello-text {
+  color: #fff;
+  font-size: 3rem;
+  font-family: 'Inter', sans-serif;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.fade-out {
+  opacity: 0;
+  visibility: hidden;
+}
+

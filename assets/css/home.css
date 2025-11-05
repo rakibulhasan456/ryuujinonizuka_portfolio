@@ -1,0 +1,152 @@
+/* ===== Base ===== */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  /*background-color: #9c9c9c;*/
+  /*background-color: #17181D;*/
+  background-color: #4f4f4f;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+#mainContent {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+/* ===== Hero Section ===== */
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  align-items: flex-end;
+}
+
+/* ===== Scrolling Name ===== */
+
+.name-scroll {
+  position: absolute;
+  bottom: 2%;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 3;
+}
+
+.scroll-text {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 25vh;
+  color: rgba(255, 255, 255, 1);
+  animation: scrollText 30s linear infinite;
+}
+
+.scroll-text span {
+  display: inline-block;
+  padding-right: 2rem;
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ===== Center Image ===== */
+
+.hero-center {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* The image will always touch the bottom,
+   and its height will automatically adjust,
+   leaving 5% empty space above it. */
+
+.hero-center img {
+  height: 98vh;
+  max-height: 95vh;
+  width: auto;
+  border-radius: 10px;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.hero-center img:hover {
+  /*transform: scale(1.05);*/
+}
+
+/* ===== Right Info ===== */
+
+.hero-right {
+  position: absolute;
+  right: 10%;
+  bottom: 40%;
+  text-align: left;
+  z-index: 2;
+  font-family: 'Montserrat', sans-serif!important;
+}
+
+.hero-right h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.hero-right p {
+  font-size: 1.8rem;
+  opacity: 0.85;
+}
+
+/* ===== Responsive Fixes ===== */
+
+@media (max-width: 1200px) {
+  .hero-center {
+    margin-top: 20vh;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero-right {
+    position: absolute;
+    left: 10%;
+    bottom: auto;
+    text-align: left;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero-right h2 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero-right p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .name-scroll {
+    bottom: 10%;
+  }
+}
+
